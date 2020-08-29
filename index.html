@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey_form</title>
+    <link rel="stylesheet" href="Survey_form.css">
+</head>
+<body>
+
+    <h1>Clarusway Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form action="form_result.html">
+        <label for="name" name="fname">Name</label><br><br>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <label for="sname" name="sname">Surname</label><br><br>
+        <input type="text" id="sname" placeholder="Enter your Surname"><br><br>
+        <label for="email" name="email">Email</label><br><br>
+        <input type="email" id="email" placeholder="user@clarusway.com"><br><br>
+
+        <label for="describe">Which option best describes your current role?</label><br><br>
+        <select name="t" id="describe" style="width:150px">
+
+            <option value="" disabled selected>Select current role</option>
+            <option value="Listener" >Listener</option>
+            <option value="Aktive">Aktive</option>
+            <option value="Expert">Expert</option>
+        </select><br><br>
+
+        <p>Would you recommend Clarusway to a friend?</p>
+        <input type="radio" id="yes" name="Recommend_friends" value="definitely_yes">
+        <label for="yes">Definitely, Yes</label><br>
+        <input type="radio" id="Maybe" name="Recommend_friends" value="Maybe">
+        <label for="Maybe">Maybe</label><br>
+        <input type="radio" id="not" name="Recommend_friends" value="not_sure">
+        <label for="not">Not sure</label><br>
+        <input type="radio" id="no" name="Recommend_friends" value="Definitely_no">
+        <label for="no">Definitely, No</label><br><br>
+
+        <label for="favorite">What is your favorite feature of Clarusway?</label><br><br>
+        <select name="favorite" id="favorite" style="width:150px">
+
+
+
+            <option value="" disabled selected>Select current role</option>
+            <option value="Cheap" >Cheap</option>
+            <option value="Qualitat">Qualitat</option>
+            <option value="Expert">Expert</option>
+        </select><br><br>
+
+        <p>What yould you like to see improved?(Check all that apply</p>
+        <input type="checkbox" id="front" name="improve" value="Front-end Projects">
+        <label for="front">Front-end Projects</label><br>
+        <input type="checkbox" id="Back" name="improve" value="Back-end Projects">
+        <label for="Back">Back-end Projects</label><br>
+        <input type="checkbox" id="Data" name="improve" value="Data_Science">
+        <label for="Data">Data Science</label><br>
+        <input type="checkbox" id="Addition" name="improve" value="Additional_Coures">
+        <label for="Addition">Additional Courses</label><br><br>
+
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea name="comments" id="comments" cols="12" rows="2">Enter your comments here.. Thanks for your comments</textarea>
+        <input type="submit" value="submit">
+        </form>    
+</body>
+</html>
